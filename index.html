@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexAI Farm Market Assistant</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">114 創業歸故里 · 新竹縣 · 導入級</p>
+          <h1>NexAI 農場到市場 AI</h1>
+        </div>
+        <div class="source-pill">
+          <span>來源</span>
+          <strong>創業驗證組成果評選分級獎勵名單</strong>
+        </div>
+      </header>
+
+      <section class="overview" aria-label="營運總覽">
+        <article class="metric">
+          <span>今日可售</span>
+          <strong id="metric-stock">328 盒</strong>
+          <small>3 個批次待出貨</small>
+        </article>
+        <article class="metric accent">
+          <span>LINE 詢問</span>
+          <strong id="metric-inquiries">42</strong>
+          <small>回覆率 86%</small>
+        </article>
+        <article class="metric">
+          <span>待確認訂單</span>
+          <strong id="metric-orders">18</strong>
+          <small>預估 $38,460</small>
+        </article>
+        <article class="metric dark">
+          <span>本週預估</span>
+          <strong id="metric-revenue">$182k</strong>
+          <small>比上週 +14%</small>
+        </article>
+      </section>
+
+      <section class="workspace">
+        <aside class="panel crop-panel" aria-label="作物批次">
+          <div class="panel-heading">
+            <p>作物批次</p>
+            <button class="ghost-button" id="restock-button">補貨</button>
+          </div>
+          <div class="crop-list" id="crop-list"></div>
+        </aside>
+
+        <section class="panel composer-panel" aria-label="LINE 行銷助理">
+          <div class="panel-heading">
+            <p>LINE 銷售訊息</p>
+            <div class="segmented" role="tablist" aria-label="訊息模式">
+              <button class="segment active" data-tone="warm">溫暖</button>
+              <button class="segment" data-tone="direct">直售</button>
+              <button class="segment" data-tone="premium">禮盒</button>
+            </div>
+          </div>
+
+          <div class="selected-crop" id="selected-crop"></div>
+
+          <div class="form-grid">
+            <label>
+              <span>今日價格</span>
+              <input id="price-input" type="number" min="1" step="10" />
+            </label>
+            <label>
+              <span>可出貨量</span>
+              <input id="quantity-input" type="number" min="1" step="1" />
+            </label>
+            <label>
+              <span>主要客群</span>
+              <select id="audience-input">
+                <option>家庭採買</option>
+                <option>公司團購</option>
+                <option>餐飲店家</option>
+                <option>節慶送禮</option>
+              </select>
+            </label>
+            <label>
+              <span>出貨日</span>
+              <input id="ship-input" type="date" />
+            </label>
+          </div>
+
+          <div class="message-card">
+            <div class="phone-preview">
+              <div class="chat-head">
+                <span>NexAI 小幫手</span>
+                <strong>LINE</strong>
+              </div>
+              <p id="line-message"></p>
+            </div>
+            <div class="composer-actions">
+              <button id="generate-button">產生訊息</button>
+              <button class="secondary" id="copy-button">複製草稿</button>
+            </div>
+          </div>
+        </section>
+
+        <aside class="panel insight-panel" aria-label="AI 建議">
+          <div class="panel-heading">
+            <p>AI 建議</p>
+            <span class="live-dot">更新中</span>
+          </div>
+          <div class="insight-stack" id="insight-stack"></div>
+          <div class="source-box">
+            <span>獎項來源</span>
+            <p>114 創業歸故里+驗證輔導計畫，創業驗證組成果評選分級獎勵名單，導入級。</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="lower-grid">
+        <article class="panel orders-panel">
+          <div class="panel-heading">
+            <p>訂單看板</p>
+            <button class="ghost-button" id="add-order-button">新增模擬訂單</button>
+          </div>
+          <div class="orders" id="orders"></div>
+        </article>
+
+        <article class="panel campaign-panel">
+          <div class="panel-heading">
+            <p>通路成效</p>
+            <span>本週</span>
+          </div>
+          <div class="channel-bars" id="channel-bars"></div>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
