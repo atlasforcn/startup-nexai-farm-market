@@ -1,5 +1,21 @@
 # NexAI Farm Market Assistant
 
+## 快速看懂
+
+![startup-nexai-farm-market 功能截圖](docs/preview.png)
+
+- 線上 Demo：https://atlasforcn.github.io/startup-nexai-farm-market/
+- 這個原型在做什麼：把 NexAI 做成基於 LINE 情境的農民銷售與行銷助理。
+- 特色定位：特色是把農產品上架、客戶訊息、銷售建議與行銷文案放到同一個農務銷售畫面。
+- 操作流程：建立農產品與庫存資料 → 查看 AI 銷售建議與客戶訊息 → 產生行銷文案並追蹤訂單狀態
+
+<details>
+<summary>展開完整功能流程截圖</summary>
+
+![startup-nexai-farm-market 完整功能流程截圖](docs/flow.png)
+
+</details>
+
 這個 repo 是依據 `NexAI` 在創業歸故里驗證輔導計畫中的提案概念做出的前端原型。原型把「農場到市場 AI：基於 LINE 的農民銷售與行銷助理」實作成一個農民可操作的銷售工作台。
 
 ## 比賽來源
