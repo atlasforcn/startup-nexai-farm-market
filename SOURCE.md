@@ -17,3 +17,8 @@
 The official list provides the competition, year, award level, city/county, company/team name, and proposal title. This prototype interprets the proposal as a lightweight farm-to-market assistant for small farmers, combining batch inventory, LINE-ready sales copy, order tracking, and AI-generated operational recommendations.
 
 This repo is an independent educational prototype and is not affiliated with or endorsed by the original team or organizer.
+## 官方來源補充
+
+- 數位發展部數位產業署「創業歸故里驗證輔導計畫」114 年成果評選分級獎勵名單：
+  https://sccontest.tca.org.tw/content/display#sectionA
+- 官方名單確認作品「農場到市場 AI：基於 LINE 的農民銷售與行銷助理」及其得獎資料；本原型未使用團隊未公開功能或營運數據。
